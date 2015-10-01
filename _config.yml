@@ -1,9 +1,10 @@
-name: MSUM ACM
-description: The blog of MSUM's ACM chapter
+# Site settings
+title: MSUM ACM
+baseurl: "" # the subpath of your site, e.g. /blog/
 highlighter: pygments
 url :   http://msumacm.org
 permalink: /:year/:month/:day/:title
-markdown: rdiscount
+markdown: kramdown
 timezone: America/Chicago
 rdiscount:
     extensions: [smart]

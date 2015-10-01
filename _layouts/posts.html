@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+
+<div class="container">
+
+
+  <div class="blog-post">
+    <h2 class="blog-post-title">{{ page.title }} </h2>
+    <p class="blog-post-meta">{{ page.date  | date: '%B %d, %Y' }} • Category: <strong>{{ page.categories | last }}</strong></p>
+    <h3>
+      <span class="label label-default">Where/When</span><span class="label label-primary">{% if post.time %}{{ post.time }}{% else %}{{ site.data.basicinfo.event_base_time }}{% endif %} in {% if post.room %}{{ post.room }}{% else %}{{ site.data.basicinfo.event_base_room }}{% endif %}</span>
+    </h3>
+
+  </div>
+
+  <div class="col-sm-8 blog-main">
+    <p class="sm-spacer"></p>
+    {{ content }}
+  </div>
+  <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+    <div class="sidebar-module sidebar-module-inset sidebar-mute">
+      <h3>Requirements</h3>
+      <ol class="list-unstyled">
+        {% for requirement in page.requirements %}
+        <li>{{ requirement.item }}</li>
+        {% endfor %}
+      </ol>
+    </div>
+    <div class="sidebar-module sidebar-module-inset sidebar-mute">
+      <h3>Extra Credit</h3>
+      <p>List of professors offering extra credit.  Check with the professor if you are unsure they are offering</p>
+      <ol class="list-unstyled">
+        {% for excred in page.extracredit %}
+        <li>{{ excred.professor }}</li>
+        {% endfor %}
+      </ol>
+    </div>
+    {% if page.links %}
+    <div class="sidebar-module sidebar-module-inset sidebar-mute">
+      <h3>Provided Links</h3>
+      <ol class="list-unstyled">
+        {% for pageLink in page.links %}
+        <li><a href="{{ pageLink.link }}">{{ pageLink.title }}</a></li>
+        {% endfor %}
+      </ol>
+    </div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="vertical-center">
+  <div class="container">
+    <h1>We're Working on it</h1>
+    <h4>{% if include.pagename %}The <strong>{{ include.pagename }}</strong>{% else %}This{% endif %} page is under construction.</h4>
+    <p>We are sorry for the inconvenience.  {% if include.pagedate %}This page is looking to be finished by <strong>{{ include.pagedate }}</strong>.  Check it out then!{% endif %}</p>
+    {% if include.pagemsg %}<p>{{ include.pagemsg }}</p>{% endif %}
+    <p><a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/" role="button">Home »</a></p>
+
+  </div>
+</div>

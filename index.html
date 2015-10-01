@@ -1,45 +1,21 @@
 ---
-layout: default
-title: "MSUM ACM"
+layout: home
+link1: active
+title: "All Posts"
 ---
 
-
-{% include billboard.html %}
-
-{% include info.html %}
-
-{% include current-workshop.html %}
-
-<div class="extras">
-  <div class="archive-link"> <a href="/events/">Checkout All workshops &amp; events</a>
-      </div><!-- /archive-link -->
-      {% include events.html %}
-    </div><!-- /extras -->
-
-<div class="extras">
-  <div class="archive-link"> <a href="/articles/">Visit the community to read all articles</a>
-      </div><!-- /archive-link -->
-    </div><!-- /extras -->
-{% for post in site.categories.article limit:3 %}
-    <div class="article promo{% if forloop.index == 1 %} first-article{% endif %}">
-      <h1>{{ post.title }}</h1>
-      <div id="meta">
-        <p id="meta-primary">{{ post.author }}</p>
-      </div><!-- /meta -->
-
-
-      <div class="article-content">
-        {{ post.excerpt }}
-      </div><!-- /article-content -->
-
-
-    </div><!-- /article -->
-
-    <div class="promo-read-button"> 
-      <!-- <a href="{{ post.url }}">Read this article</a> --> 
-      <a href="{{ post.url }}" data-minutes="{{ post.minutes-to-read }}">read</a>
-    </div><!-- /promo -->
-
-
-
+{% assign count = 0 %}
+{% for post in site.categories.all limit:12 %}
+<div class="blog-post">
+  <h2 class="blog-post-title">{{ post.title }} </h2>
+  <p class="blog-post-meta">{{ post.date  | date: '%B %d, %Y' }} at {% if post.time %}{{ post.time }}{% else %}{{ site.data.basicinfo.event_base_time }}{% endif %} in {% if post.room %}{{ post.room }}{% else %}{{ site.data.basicinfo.event_base_room }}{% endif %} • Category: <strong>{{ post.categories | last }}</strong></p>
+  {{ post.excerpt }}
+  <p>
+  <a class="btn btn-primary btn-lg" href="{{ post.url }}" role="button">Read more »</a>
+  </p>
+</div>
+{% assign count = count | plus:1 %}
 {% endfor %}
+{% if count == 0 %}
+<h5>No announcments</h5>
+{% endif %}
