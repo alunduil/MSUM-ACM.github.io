@@ -14,7 +14,7 @@ layout: page
 
 <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
   <div class="sidebar-module sidebar-module-inset sidebar-mute">
-    <h3>Provided Links</h3>
+    <h3>{% if page.col_header %}{{ page.col_header }}{% else %}Provided Links{% endif %}</h3>
     <ol class="list-unstyled">
       {% for pageLink in page.links %}
       <li><a href="{{ pageLink.link }}">{{ pageLink.title }}</a></li>
