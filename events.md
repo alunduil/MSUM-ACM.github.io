@@ -18,3 +18,7 @@ links:
   </p>
 </div>
 {% endfor %}
+
+<script type="text/javascript">
+  $("#eventsnav").addClass("active");
+</script>
