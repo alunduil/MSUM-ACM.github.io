@@ -13,6 +13,16 @@ layout: page
 
 
 <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+  {% if page.title == "Git" %}
+  <div class="sidebar-module sidebar-module-inset sidebar-mute">
+    <h3>Git Workshop Pages</h3>
+    <ol class="list-unstyled">
+      {% for event in site.categories.git %}
+      <li><a href="{{ event.url }}">{{ event.date  | date: '%B %d, %Y' }}</a></li>
+      {% endfor %}
+    </ol>
+  </div>
+  {% endif %}
   <div class="sidebar-module sidebar-module-inset sidebar-mute">
     <h3>{% if page.col_header %}{{ page.col_header }}{% else %}Provided Links{% endif %}</h3>
     <ol class="list-unstyled">
