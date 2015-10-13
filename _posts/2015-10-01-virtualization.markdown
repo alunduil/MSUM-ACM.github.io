@@ -2,6 +2,7 @@
 layout: posts
 title: "Virtualization"
 categories: "all msum"
+event: true
 notify: "Read the full event page for what you are required to bring to the event."
 requirements:
    - item: "Laptop"
