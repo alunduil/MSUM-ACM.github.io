@@ -19,6 +19,7 @@ links:
 The annual ACM programming contest will be held on Saturday, October 31, 8:00 AM to 5:00 PM at NDSU.  To participate you must have completed at least CSIS 153. Completing CSIS 252, 335, or 336 would be even better.
  
 We have space for 3 teams, each of 3 students. Email Dr. Haugrud (email on sidebar)
+
 * If you and 2 other students, would like to form a team
 * If you would like to participate, but don’t know who to team up with
 * Included your name(s) and CSIS classes completed
