@@ -5,10 +5,13 @@ subtitle: "Workshops, how-to-use, commands, and more!"
 links:
   - link: "https://git-scm.com/"
     title: "Git Website"
+    target: "_blank"
   - link: "https://github.com"
     title: "Github"
+    target: "_blank"
   - link: "https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"
     title: "Github Markdown Cheatsheet"
+    target: "_blank"
 ---
 ### Next workshop: Thursday, October 15th
 
