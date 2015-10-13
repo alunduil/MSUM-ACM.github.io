@@ -9,6 +9,7 @@ title: "All Posts"
 <div class="blog-post">
   <h2 class="blog-post-title">{{ post.title }} </h2>
   <p class="blog-post-meta">{{ post.date  | date: '%B %d, %Y' }} at {% if post.time %}{{ post.time }}{% else %}{{ site.data.basicinfo.event_base_time }}{% endif %} in {% if post.room %}{{ post.room }}{% else %}{{ site.data.basicinfo.event_base_room }}{% endif %} • Category: <strong>{{ post.categories | last }}</strong></p>
+  {% if post.categories.fm != null %}<p class="blog-post-meta">{% if post.location %}{{ post.location }}{% else %}Location is not set yet{% endif %}</p>{% endif %}
   {{ post.excerpt }}
   <p>
   <a class="btn btn-primary btn-lg" href="{{ post.url }}" role="button">Read more »</a>
