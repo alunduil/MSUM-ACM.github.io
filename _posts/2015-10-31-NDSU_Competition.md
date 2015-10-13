@@ -2,7 +2,8 @@
 layout: posts
 title: "NDSU Programming Competition"
 categories: "all fm"
-subtitle: "8:00 AM to 5:00 PM"
+subtitle: "Sponsored by IBM"
+time: "8:00 AM to 5:00 PM"
 location: "NDSU"
 requirements:
    - item: "CSIS 153"
