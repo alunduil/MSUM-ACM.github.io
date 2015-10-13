@@ -27,7 +27,7 @@ layout: page
     <h3>{% if page.col_header %}{{ page.col_header }}{% else %}Provided Links{% endif %}</h3>
     <ol class="list-unstyled">
       {% for pageLink in page.links %}
-      <li><a href="{{ pageLink.link }}">{{ pageLink.title }}</a></li>
+      <li><a href="{{ pageLink.link }}" {% if pageLink.target %}target="{{ pageLink.target }}"{% endif %}>{{ pageLink.title }}</a></li>
       {% endfor %}
     </ol>
   </div>
