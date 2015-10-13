@@ -14,6 +14,8 @@ layout: default
     <h3>
       <span class="label label-default">Where/When</span><span class="label label-primary">{% if post.time %}{{ post.time }}{% else %}{{ site.data.basicinfo.event_base_time }}{% endif %} in {% if post.room %}{{ post.room }}{% else %}{{ site.data.basicinfo.event_base_room }}{% endif %}</span>
     </h3>
+    {% else %}
+    <p class="blog-post-meta">{% if page.location %}{{ page.location }}{% else %}No location set{% endif %}</p>
     {% endif %}
 
   </div>
