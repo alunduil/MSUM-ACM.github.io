@@ -8,10 +8,11 @@ layout: default
 
   <div class="blog-post">
     <h2 class="blog-post-title">{{ page.title }} </h2>
+    {% if page.subtitle %}<h4 class="blog-post-meta">{{ page.subtitle }}</h4>{% endif %}
     <p class="blog-post-meta">{{ page.date  | date: '%B %d, %Y' }} • Category: <strong>{{ page.categories | last }}</strong></p>
-    <h3>
+    {% if page.categories | last == "msum" %}<h3>
       <span class="label label-default">Where/When</span><span class="label label-primary">{% if post.time %}{{ post.time }}{% else %}{{ site.data.basicinfo.event_base_time }}{% endif %} in {% if post.room %}{{ post.room }}{% else %}{{ site.data.basicinfo.event_base_room }}{% endif %}</span>
-    </h3>
+    </h3>{% endif %}
 
   </div>
 
