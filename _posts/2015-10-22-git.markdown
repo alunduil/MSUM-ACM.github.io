@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "Git"
-categories: "all msum git"
+categories: "all git msum"
 notify: "Read the full event page for what you are required to bring to the event."
 requirements:
    - item: "Laptop"
