@@ -10,7 +10,7 @@ layout: page
   <p class="blog-post-meta">{{ article.date  | date: '%B %d, %Y' }} • Author: <strong>{{ article.author }}</strong></p>
   {{ article.excerpt }}
   <p>
-  <a class="btn btn-primary btn-lg" href="{{ post.url }}" role="button">Read more »</a>
+  <a class="btn btn-primary btn-lg" href="{{ article.url }}" role="button">Read more »</a>
   </p>
 </div>
 {% endfor %}
