@@ -13,7 +13,7 @@ links:
     title: "Github Markdown Cheatsheet"
     target: "_blank"
 ---
-### Next workshop: Thursday, October 15th
+### Next workshop: Thursday, October 22th
 
 We are planning to use BR 164 for the workshop but this is subject to change.
 
