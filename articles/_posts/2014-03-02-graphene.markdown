@@ -17,7 +17,7 @@ will this new isolate of carbon drastically change computer processors and
 how much different is it compared to the past and present computer
 processors?
 
-<div class="article-image">
+<div class="article-image left-image">
 <iframe width="636" height="358" src="//www.youtube.com/embed/-KPhqy7ZwHU" frameborder="0" allowfullscreen></iframe>
 </div><!-- /article-image -->
 <!-- <iframe width="560" height="315" src="//www.youtube.com/embed/-KPhqy7ZwHU" frameborder="0" allowfullscreen></iframe> -->
@@ -83,7 +83,7 @@ speed clocked today! Just think of the future of computers if they were all
 running this fast. No more waiting for your computer to start a hefty program
 or even to start up.
 
-<div class="article-image">
+<div class="article-image right-image">
     <img
     src="/assets/img/graphene-structure.jpg"
     alt="Graphene Structure"
