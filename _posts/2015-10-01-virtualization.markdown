@@ -20,3 +20,4 @@ Virtualization makes it possible to run Ubuntu Linux or Mac OS X on a regular Wi
 
 
 Students will need to bring their laptop to the event in order to work through the workshop.  Dr. Ficek is also offering extra credit points to students in her class for attending and going through the entire workshop.  This is a great event to meet/socialize with fellow ACM members and other students from our department.
+
