@@ -24,7 +24,7 @@ When I started researching I came across this thing called _makerspaces_; so mak
 It was surprising to me that fargo didn't have one of these. Fargo needs one. The demand is there, so why not just open one? Lets just do it. So, thats what I did. I made a business plan, went around talked to the banks, got the financing figured out and now here I am - the space is open. 
 
 <div class="article-image right-image">
-    <img src="/assets/img/meld-profile.jpg" alt="MELD Profile picture"/>
+    <img src="/assets/img/meld-profile.jpg" alt="MELD Profile picture" height="400px" width="580px"/>
 </div>
 
 
