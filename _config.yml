@@ -1,7 +1,7 @@
 # Site settings
 title: MSUM ACM
 baseurl: "" # the subpath of your site, e.g. /blog/
-highlighter: pygments
+rough: pygments
 url :   http://msumacm.org
 permalink: /:year/:month/:day/:title
 markdown: kramdown
