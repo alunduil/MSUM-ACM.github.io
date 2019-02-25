@@ -8,7 +8,7 @@ event: true
 ---
 
 ### Do you believe certain sections should be changed? 
-If you do then you should vote on the current MSUM ACM Constitutional Amendments [here](https://mnstate.campuslabs.com/engage/submitter/form/start/253105). Vote in favor by checking the box, and not in favor by leaving the box blank.
+If you do then you should vote on the [current MSUM ACM Constitutional Amendments here](https://mnstate.campuslabs.com/engage/submitter/form/start/253105). Vote in favor by checking the box, and not in favor by leaving the box blank.
 
 Current Amendments are as follows:
 * Amend the Constitution to one election a year
